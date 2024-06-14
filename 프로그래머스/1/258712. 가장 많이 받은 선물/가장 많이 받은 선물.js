@@ -2,7 +2,7 @@ function solution(friends, gifts) {
     const take = [];
     const friendsObj = {};
     friends.forEach((friend) => {
-        friendsObj[friend] = { give: 0, take: 0, point: 0, nextMonth: 0, };
+        friendsObj[friend] = { point: 0, nextMonth: 0 };
         friends.forEach((to) => {
             friendsObj[friend][to] = 0;
         })
